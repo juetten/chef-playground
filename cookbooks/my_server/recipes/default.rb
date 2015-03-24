@@ -7,10 +7,10 @@
 # All rights reserved - Do Not Redistribute
 #
 #
-#include_recipe "xinetd"
+include_recipe 	"xinetd"
+include_recipe		"tftp"
+#include_recipe		"ms_telnet_client"
 #include_recipe	"inetd"
-#include_recipe	"ftp-server"
 #include_recipe	"ypserv"
-#include_recipe	"telnet-server"
-#include_recipe	"rsh-server"
+include_recipe	"rssh"
 

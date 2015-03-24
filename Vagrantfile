@@ -30,5 +30,5 @@ Vagrant.configure("2") do |config|
   config.vm.box = "opscode-centos-7.0"
   config.vm.box_url = "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-7.0_chef-provisionerless.box"
 
-  define_node(config, :server_hardened)
+  define_node(config, :serverhardening)
 end
