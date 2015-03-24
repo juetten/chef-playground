@@ -1,0 +1,20 @@
+DEPENDENCIES
+  my_server
+    path: cookbooks/my_server
+
+GRAPH
+  apt (2.7.0)
+  my_server (0.1.5)
+    apt (>= 0.0.0)
+    ntp (>= 0.0.0)
+    sysctl (>= 0.0.0)
+    tftp (>= 0.0.0)
+    xinetd (>= 0.0.0)
+    yum (>= 0.0.0)
+  ntp (1.7.0)
+  ohai (2.0.1)
+  sysctl (0.6.2)
+    ohai (>= 0.0.0)
+  tftp (1.2.0)
+  xinetd (1.0.1)
+  yum (3.5.3)

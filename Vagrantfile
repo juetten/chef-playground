@@ -17,6 +17,9 @@ def define_node(config, node_name, ip_address=nil, role=nil)
       chef.validation_client_name = "ejo-validator"
       chef.provisioning_path = "/etc/chef"
       chef.add_role role if role
+
+		chef.add_recipe "my_server"
+		chef.add_recipe "os-hardening"
     end
   end
 end
